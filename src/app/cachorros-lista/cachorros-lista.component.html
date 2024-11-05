@@ -1,0 +1,12 @@
+<div class="cont">
+  <app-card-cachorro
+    *ngFor="let cachorro of cachorros"
+    [nome]="cachorro.nome"
+    [imagemUrl]="cachorro.imagemUrl"
+    [raca]="cachorro.raca"
+    [idade]="cachorro.idade"
+    [porte]="cachorro.porte"
+    [pelagem]="cachorro.pelagem"
+    [temperamento]="cachorro.temperamento">
+  </app-card-cachorro>
+</div>

@@ -1,0 +1,14 @@
+<div class="card">
+  <img [src]="imagemUrl" alt="Imagem de {{ nome }}" class="card-img-top">
+  <div class="card-body">
+    <h2 class="card-title">{{ nome }}</h2>
+    <p *ngIf="raca"><strong>Raça:</strong> {{ raca }}</p>
+    <p *ngIf="idade"><strong>Idade:</strong> {{ idade }}</p>
+    <p *ngIf="porte"><strong>Porte:</strong> {{ porte }}</p>
+    <p *ngIf="pelagem"><strong>Pelagem:</strong> {{ pelagem }}</p>
+    <p *ngIf="temperamento"><strong>Temperamento:</strong> {{ temperamento }}</p>
+    <p *ngIf="saude"><strong>Saúde:</strong> {{ saude }}</p>
+    <p *ngIf="localizacao"><strong>Localização:</strong> {{ localizacao }}</p>
+    <button class="adopt-button">Adotar</button>
+  </div>
+</div>
